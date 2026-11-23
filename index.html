@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nikhil (Nik) Sridhar</title>
+  <meta name="description" content="Nikhil (Nik) Sridhar — member of technical staff at Skild AI working on post-training and controls for contact-rich robot manipulation. Research, publications, and open learning notes.">
+  <link rel="canonical" href="https://www.niksridhar.com/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.niksridhar.com/">
+  <meta property="og:site_name" content="Nikhil (Nik) Sridhar">
+  <meta property="og:title" content="Nikhil (Nik) Sridhar">
+  <meta property="og:description" content="Robotics research at Skild AI, publications, and open notes on learning new subjects.">
+  <meta property="og:image" content="https://www.niksridhar.com/assets/headshot.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@nikhil_sridhar">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body id="top">
+  <!-- Optimization-landscape scrollbar (desktop only; see js/landscape.js) -->
+  <div class="landscape" aria-hidden="true">
+    <canvas class="landscape__field"></canvas>
+    <canvas class="landscape__ball"></canvas>
+  </div>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <nav class="topbar__nav" aria-label="Sections">
+        <a href="#top" data-section="about">Home</a>
+        <a href="#research" data-section="research">Research</a>
+        <a href="#notes" data-section="notes">Notes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <header class="intro" id="about">
+      <div class="intro__text">
+        <h1>Nikhil (Nik) Sridhar</h1>
+        <p>
+          I am currently a member of technical staff at <a href="https://www.skild.ai/">Skild AI</a>,
+          where I work on post-training and controls for contact-rich tasks. Previously, I did my
+          Masters at the University of Michigan studying computer science and theoretical math.
+          I have been advised by <a href="https://jjparkcv.github.io/">Prof. JJ Park</a> and
+          <a href="https://dorsa.fyi/">Prof. Dorsa Sadigh</a>.
+        </p>
+        <p>
+          I am broadly interested in (1) characterizing hardware for better sim2real transfer,
+          (2) learning reactive policies with adaptive compliance, and (3) building
+          physics-consistent world models.
+        </p>
+        <p>
+          In my free time I enjoy running, biking, reading, and abusing my Ninja Creami.
+        </p>
+        <nav class="links" aria-label="Profiles">
+          <a href="mailto:nik.sridhar@gmail.com">Email</a>
+          <a href="https://x.com/nikhil_sridhar">Twitter</a>
+          <a href="https://github.com/theonlynick0430">GitHub</a>
+        </nav>
+      </div>
+      <picture class="intro__photo">
+        <source srcset="assets/headshot.webp" type="image/webp">
+        <img src="assets/headshot.jpg" alt="Nikhil Sridhar sitting on rocks by the San Francisco Bay" width="675" height="900">
+      </picture>
+      <!-- Mobile only: a self-running optimization landscape beside the photo (js/landscape.js) -->
+      <div class="hero-landscape" aria-hidden="true">
+        <canvas class="landscape__field"></canvas>
+        <canvas class="landscape__ball"></canvas>
+      </div>
+    </header>
+
+    <section id="research" aria-labelledby="research-h">
+      <h2 id="research-h">Research &amp; Publications</h2>
+
+      <article class="pub">
+        <a class="pub__media" href="https://this-and-that-vid.github.io/this-and-that/" tabindex="-1">
+          <video src="assets/thisandthat.mp4" poster="assets/thisandthat-poster.jpg" width="900" height="648" autoplay muted loop playsinline preload="metadata" aria-label="This&amp;That demo: video generation from language and gestures"></video>
+        </a>
+        <div class="pub__body">
+          <h3><a href="https://arxiv.org/abs/2407.05530">This&amp;That: Language-Gesture Controlled Video Generation for Robot Planning</a></h3>
+          <p class="pub__authors">Boyang Wang, <strong>Nikhil Sridhar</strong>, Chao Feng, Mark Van der Merwe, Adam Fishman, Nima Fazeli, Jeong Joon Park</p>
+          <p class="pub__venue">International Conference on Robotics and Automation (ICRA) 2025</p>
+          <p class="pub__links">
+            <a href="https://arxiv.org/abs/2407.05530">Paper</a>
+            <a href="https://this-and-that-vid.github.io/this-and-that/">Website</a>
+            <a href="https://github.com/Kiteretsu77/This_and_That_VDM">GitHub</a>
+            <a href="https://huggingface.co/spaces/HikariDawn/This-and-That">HuggingFace</a>
+          </p>
+        </div>
+      </article>
+
+      <article class="pub">
+        <a class="pub__media" href="https://github.com/theonlynick0430/optHIM" tabindex="-1">
+          <img src="assets/opthim.webp" alt="Loss surfaces and optimizer trajectories for GD, Newton, BFGS, L-BFGS and DFP" width="800" height="600" loading="lazy">
+        </a>
+        <div class="pub__body">
+          <h3><a href="https://arxiv.org/abs/2505.04137">optHIM: Hybrid Iterative Methods for Continuous Optimization in PyTorch</a></h3>
+          <p class="pub__authors"><strong>Nikhil Sridhar</strong> and Sajiv Shah</p>
+          <p class="pub__links">
+            <a href="https://arxiv.org/abs/2505.04137">Paper</a>
+            <a href="https://github.com/theonlynick0430/optHIM">GitHub</a>
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section id="notes" aria-labelledby="notes-h">
+      <h2 id="notes-h">You can just learn things.</h2>
+      <p class="lede">
+        Future models may solve hard problems with little human help, which raises the question
+        of what is still worth learning. My answer: it depends on how much you care. If a question
+        matters to you, the how and why are worth understanding, even if AI gets to the answer first.
+      </p>
+      <p class="lede">
+        For the past six months I've used AI as a personal tutor to learn subjects I'd never studied:
+        generating visuals, digitizing handwritten notes, working through confusing concepts, and
+        running experiments. Below are my notes and references, plus examples of how I've used these
+        tools, in case they help someone else figure out where to start.
+        (<a href="https://x.com/nikhil_sridhar/status/2123677636945936513">Original thread.</a>)
+      </p>
+
+      <!--
+        The trail. Each <li class="stop"> is one release; add new ones at the end.
+        data-kind is free-form (notes, video, references, code, ...) and only drives the label/icon.
+        Mark unreleased stops with class="stop stop--upcoming".
+      -->
+      <ol class="trail">
+        <li class="stop" data-kind="notes">
+          <span class="stop__node" aria-hidden="true"></span>
+          <div class="stop__card">
+            <p class="stop__meta"><span class="stop__kind">Annotated reference</span> · <time datetime="2026-11">Nov 2026</time></p>
+            <h3>The Principles of Diffusion Models, annotated</h3>
+            <p>
+              My adapted version of <a href="https://arxiv.org/abs/2510.21890">Lai, Song, Kim, Mitsufuji &amp; Ermon (2025)</a>.
+              My notes are written directly into the text: skipped steps expanded inside the
+              derivations, added proofs (e.g. divergence theorem, multivariate integration by parts,
+              Jensen's inequality), and highlights on the parts I found most important.
+            </p>
+            <ul class="stop__files">
+              <li><a href="releases/principles-of-diffusion-models/principles-of-diffusion-models-annotated.pdf">PDF</a></li>
+              <li><a href="releases/principles-of-diffusion-models/principles-of-diffusion-models-src.zip" download>LaTeX source (.zip, 17&nbsp;MB)</a></li>
+              <li><a href="https://arxiv.org/abs/2510.21890">Original on arXiv</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="stop stop--upcoming" data-kind="notes">
+          <span class="stop__node" aria-hidden="true"></span>
+          <div class="stop__card">
+            <p class="stop__meta"><span class="stop__kind">Up next</span></p>
+            <h3>Optimization convergence tricks</h3>
+            <p>Coming soon.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 Nikhil Sridhar</p>
+    </footer>
+  </main>
+
+  <script src="js/nav.js" defer></script>
+  <script src="js/trail.js" defer></script>
+  <script src="js/landscape.js" defer></script>
+</body>
+</html>
